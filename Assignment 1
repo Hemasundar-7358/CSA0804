@@ -1,0 +1,61 @@
+### FIND THE Kth SAMLLEST ELEMENT IN TH LIST
+
+import heapq
+def kth_smallest(lst, k):
+    return heapq.nsmallest(k, lst)[-1]
+
+lst = [7, 10, 4, 3, 20, 15]
+k = 3
+print("Kth smallest element is:", kth_smallest(lst, k))
+
+
+
+### FIND THE DIFFERENCE B/W TWO LISTS
+
+from collections import Counter
+def list_diff(a, b):
+    return list((Counter(a) - Counter(b)).elements())
+
+list1 = [1, 2, 2, 3, 4]
+list2 = [2, 4]
+print("Difference:", list_diff(list1, list2))
+
+
+
+###FIND THE COMMON ELEMENTS B/W TWO LISTS
+
+def common_elements(list1, list2):
+    return list(set(list1) & set(list2))
+list1 = [1, 2, 2, 3, 4]
+list2 = [2, 4, 5]
+print("Common elements:", common_elements(list1, list2))
+
+
+
+###FIND THE UNION OF TWO LISTS
+
+def union_lists(list1, list2):
+    return list(set(list1) | set(list2))
+
+list1 = [1, 2, 2, 3]
+list2 = [3, 4, 5]
+print("Union:", union_lists(list1, list2))
+
+
+
+###FIND THE INTERSECTION OF TWO LISTS
+
+def intersection_lists(list1, list2):
+    return list(set(list1) & set(list2))
+
+list1 = [1, 2, 2, 3, 4]
+list2 = [2, 4, 4, 5]
+print("Intersection:", intersection_lists(list1, list2))
+
+
+
+
+
+
+
+
