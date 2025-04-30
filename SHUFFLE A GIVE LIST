@@ -1,0 +1,6 @@
+import random
+
+mylist = [90,49,43,78]
+random.shuffle(mylist)
+print(mylist
+
