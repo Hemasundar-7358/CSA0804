@@ -1,0 +1,7 @@
+from collections import Counter
+def list_diff(a, b):
+    return list((Counter(a) - Counter(b)).elements())
+
+list1 = [1, 2, 2, 3, 4]
+list2 = [2, 4]
+print("Difference:", list_diff(list1, list2))
