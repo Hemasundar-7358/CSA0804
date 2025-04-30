@@ -1,0 +1,7 @@
+import heapq
+def kth_smallest(lst, k):
+    return heapq.nsmallest(k, lst)[-1]
+
+lst = [7, 10, 4, 3, 20, 15]
+k = 3
+print("Kth smallest element is:", kth_smallest(lst, k))
