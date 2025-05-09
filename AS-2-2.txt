@@ -1,0 +1,6 @@
+password = input("Enter a password: ")
+
+if len(password) >= 8 and any(c.isdigit() for c in password) and any(c.islower() for c in password) and any(c.isupper() for c in password):
+    print("Valid password")
+else:
+    print("Invalid password")
