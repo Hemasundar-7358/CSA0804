@@ -1,0 +1,9 @@
+#roots of the quadratic equation
+a=int(input("enter the value of a"))
+b=int(input("enter the value of b"))
+c=int(input("enter the value of c"))
+
+d1=(-b+(b**2-4*a*c)**0.5)/(2*a)
+d2=(-b-(b**2-4*a*c)**0.5)/(2*a)
+
+print("the roots of the quadratic eqaution are",d1, d2)
