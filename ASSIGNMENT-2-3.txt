@@ -1,0 +1,4 @@
+#area of the triangle
+radius=int(input("enter the value"))
+area=3.14*radius**2
+print("area of the circle is:",area)
