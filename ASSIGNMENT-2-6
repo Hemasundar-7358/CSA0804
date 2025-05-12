@@ -1,0 +1,6 @@
+## Average of a list of numbers
+
+def average(lst):
+    return sum(lst) / len(lst)
+
+print(average([10, 20, 30])) 
