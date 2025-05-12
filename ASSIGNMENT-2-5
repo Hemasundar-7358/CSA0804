@@ -1,0 +1,8 @@
+## GCD of three numbers
+
+import math
+
+def gcd_of_three(a, b, c):
+    return math.gcd(math.gcd(a, b), c)
+
+print(gcd_of_three(24, 60, 36))
